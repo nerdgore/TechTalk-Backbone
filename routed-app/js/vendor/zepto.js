@@ -77,7 +77,6 @@ var Zepto = (function() {
   }
 
   function type(obj) {
-      console.log("type", obj, obj == null ? String(obj) : class2type[toString.call(obj)] || "object");
     return obj == null ? String(obj) :
       class2type[toString.call(obj)] || "object"
   }
@@ -1441,7 +1440,6 @@ window.Zepto = Zepto
   // handle optional data/success arguments
   function parseArguments(url, data, success, dataType) {
     var hasData = !$.isFunction(data)
-    console.log("Zepto#parseArgument", arguments, hasData, $.isFunction(data))
     return {
       url:      url,
       data:     hasData  ? data : undefined,
