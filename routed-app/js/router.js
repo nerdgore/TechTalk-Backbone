@@ -41,7 +41,6 @@
                 collection: new tt.Issues()
             });
             
-            window["test"] = this.issuesView.collection;
             this.issuesView.collection.fetch();
         }
         
