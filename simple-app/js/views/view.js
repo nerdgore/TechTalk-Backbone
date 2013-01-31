@@ -4,8 +4,8 @@
     
     tt.View = Backbone.View.extend({
         
-        className: "issue",
         tagName: "div",
+        className: "issue",
         
         
         
