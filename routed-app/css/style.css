@@ -1,0 +1,46 @@
+
+body {
+    padding: 10px;
+    font: normal 12pt/1.5 "Helvetica Neue", "Droid sans", sans-serif;
+}
+
+h2, p, div, ul, li, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+
+.issue {
+    padding: 0;
+    border: 1px solid #aaa;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+.issue + .issue {
+    margin-top: 20px;
+}
+
+.issue .title {
+    padding: 10px;
+    border-bottom: 1px solid #666;
+}
+
+.issue .content {
+    padding: 10px;
+    border-top: 1px solid #eeeeee;
+}
+
+.issue.state {
+    border-radius: 0px 5px 5px 0px;
+    border-left-width: 20px;
+}
+
+.issue.state.open {
+    border-left-color: green;
+}
