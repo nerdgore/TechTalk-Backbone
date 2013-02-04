@@ -15,8 +15,10 @@
     tt.initialize = function () {
         var issue, view;
         
-        // instanciate the model
-        issue = new tt.Issue();
+        // instanciate the model [with a number]
+        issue = new tt.Issue({
+            number: 600
+        });
         issue.fetch();
         
         

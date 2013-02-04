@@ -12,7 +12,6 @@
         
         
         initialize: function (options) {
-            console.log("View:::", this.model)
             this.id = "issue/" + this.model.get("id");
             this.template = _.template(tt.singleItemTemplate);
             

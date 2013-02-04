@@ -13,7 +13,6 @@
         
         initialize: function (options) {
             
-            this.id = "issue/" + this.model.id;
             this.template = _.template(tt.singleItemTemplate);
             
             this.model.on("change", this.render, this);
@@ -30,7 +29,7 @@
             output = this.template(attributes);
             
             this.$el.html(output);
-            this.$el.attr("id", this.id);
+            
             $("body").html(this.$el);
             
             return this;
